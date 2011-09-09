@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Coming Soon to a Browser Near You</title>		
+		<link rel="stylesheet" type="text/css" href="/media/style_soon.css" />
+		
+
+	</head>
+	<body>
+{% for photoset in output %}
+	<h1>{{ photoset.album_name }}</h1><br />
+	{% for photo in photoset.photo_list %}
+		<img 
+			src="{{photo}}" 
+			width="100px" 
+			height="100px"/>
+	{% endfor %}
+{% endfor %}
+	</body>
+</html>
