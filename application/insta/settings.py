@@ -62,6 +62,4 @@ INSTALLED_APPS = (
     ## changed
     'notes',
 )
-FLICKR_API_KEY='661a212bc7c6752f86e71ddd309265fb'
-FLICKR_API_SECRET='974c8599dfaa285d'
 
